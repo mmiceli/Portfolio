@@ -1,0 +1,425 @@
+/*Import font*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,600;0,700;1,100;1,200;1,300;1,600;1,800&display=swap');
+
+
+/*Variables*/
+:root {
+    --color__first: #ffffff;
+    --color__second: #f30c0c;
+    --color__third: #942e2e;
+    --color__cuarter: #000000;
+    --font__principal: 'Montserrat', sans-serif;
+
+}
+
+/*Normalize*/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Globals */
+html {
+    font-family: var(--font__principal);
+    font-size: 62.5%;
+    color: var(--color__third);
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto; 
+    min-height: 100vh; 
+}
+
+ul {
+    list-style-type: none; 
+}
+
+a {
+    text-decoration: none;
+    color: var(--color__third); 
+    display: inline-block; 
+}
+
+/*Helpers*/
+.flex_row {
+    display: flex;
+}
+.flex_column {
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    max-width: 1080px; 
+    margin: 0 auto;
+}
+
+.button {
+    color: var(--color__first);
+    background: var(--color__second);
+    padding: 1rem;
+    margin: 0rem 12rem;
+    border: none;
+    border-radius: 2rem;
+}
+
+.button:hover {
+    font-weight:600;
+    font-size: 1.6em;
+}
+
+.button_dos {
+    color: var(--color__second);
+    font-size: 1.6em;
+    background-color: var(--color__first);
+    padding: 1rem;
+    margin: 1rem;
+    border: solid 0.2rem var(--color__second);
+    border-radius: 2rem;    
+}
+
+.button_dos:hover {
+    color: var(--color__first);
+    background-color: var(--color__second);
+
+}
+
+/*Header and Navbar*/
+header {
+    min-height: 10vh;
+    border-bottom: solid 0.3rem #f0e6e6;
+}
+
+header .navbar {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+header .logo {
+    flex-basis: 30%; 
+}
+
+.menu {
+    flex-basis: 50%; 
+    justify-content: space-between;
+    
+}
+
+.menu .menu__item .menu__item__link {
+    font-size: 1.8em;
+    padding: 1rem;
+    transition: all .3s ease-in-out;    
+}
+.menu .menu__item .menu__item__link:hover {
+    font-weight:600;
+    color: var(--color__second);
+}
+
+.menu .menu__item .menu__item__link--boton {
+    font-size: 1.8em;
+    padding: 1rem;
+    color:var(--color__first);
+    background-color: var(--color__second);
+    border-radius: 20px;
+}
+
+.menu .menu__item .menu__item__link--boton:hover {
+    font-weight:600;
+}
+
+.navbar .menu__item .submenu {
+    display: none;
+    position: absolute;
+}
+
+.navbar .menu .menu__item:hover .submenu { 
+    display: block;
+}
+
+.submenu .submenu__item .submenu__item__link {
+    font-size: 1.4em;
+    padding: 1rem;
+    transform: all .3s ease-in-out; 
+    font-weight: 600;
+}
+
+.submenu .submenu__item .submenu__item__link:hover {
+    font-weight:900;
+    font-size: 1.7em;
+    color: var(--color__second);
+}
+
+/*Main*/
+main {
+    background-image: url("../image/fondo.png");
+    background-position: center;  
+    background-repeat: no-repeat;
+}
+
+.principal {
+    justify-content: space-between;
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+.titule_pag {
+    color: var(--color__third);
+    font-size: 3em;
+    padding: 1rem;
+    margin: 0 2rem; 
+}
+
+/*Main Home*/
+
+.inicio {
+    justify-content: space-between;
+    padding: 0 2rem;
+
+}
+
+.inicio .inicio__name{
+    justify-content: space-around;
+    padding: 4rem 4rem;
+    font-size: 4em;
+    color: var(--color__cuarter);
+    text-align: center;
+}
+
+.inicio .inicio__rol{
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    transform: all .3s ease-in-out;
+
+}
+
+.inicio .inicio__rol .inicio__rol__item1{
+    padding: 2rem;
+    font-size: 6em;
+    font-weight: 800;
+    text-align: center;
+}
+
+.inicio .inicio__rol .inicio__rol__item2{
+    padding: 2rem;
+    font-size: 4em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.inicio .inicio__rol .inicio__rol__item3{
+    padding: 2rem;
+    font-size: 3em;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+
+/*Main About*/
+.about {
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.about .about__me {
+    background-color: var(--color__third);
+    margin: 2rem;
+    justify-content: center;
+    align-items: center; 
+    transform: all .3s ease-in-out;
+}
+
+.about .about__me .about__me__parrafo {
+    padding: 2rem;
+    font-size: 2em;
+    color: var(--color__first);
+    text-align: center;
+    margin: 1rem;
+}
+
+.about .about__knowledge {
+    justify-content: space-around;
+    font-size: 2em;
+    color: var(--color__cuarter);
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.about .about__knowledge .about__knowledge__list {
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.about .about__knowledge .about__knowledge__list .list__titule {
+    padding: 2rem;
+    color: var(--color__third);
+}
+
+.about .about__knowledge .about__knowledge__list .list__item {
+    padding: 0.5rem;
+    font-weight: 500;
+}
+
+.about .about__button {
+    justify-content: center;
+    
+}
+
+.about .about__button .about__button__item {
+    flex-basis: 15%;
+    
+}
+
+/*Main Portfolio and Hobbies*/
+
+.portfolio {
+    background-color: rgb(250, 248, 248);
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / 20%);
+    margin: 2rem;
+}
+
+.portfolio__titule {
+    padding: 3rem 0;
+    font-size: 2em;
+}
+
+
+.portfolio__works {
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.portfolio__works__item {
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / 20%);
+    margin: 1rem;
+    flex-basis: 30%;
+    transform: all .3s ease-in-out;
+
+}
+
+.portfolio__works__item__img {
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio__works__itemA {
+    font-size: 2rem;
+    padding: 1rem;
+} 
+
+
+/*Main Contact*/
+.contact {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact .contact__description {   
+    flex-basis: 30%;
+}
+
+.contact .contact__description .contact__description__p {
+    color: var(--color__cuarter);
+    font-size: 2.5em;
+    text-align: center;
+    margin: 2rem 3rem;
+}
+
+
+.contact__form {
+    background-color:  rgba(196, 196, 196, 0.7);
+    border-radius: 20px;
+    flex-basis: 40%;
+    padding: 2rem;
+    margin: 2rem 0;
+    transform: all .3s ease-in-out;
+}
+
+.contact__form__item {
+    background: rgb(234, 242, 250);
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 2rem;
+    border: none;
+    
+}
+
+
+/*Footer*/
+footer {
+    background: linear-gradient(0.1deg, var(--color__second) 0,2%, rgba(194, 67, 39, 0) 93.73%);
+}
+
+footer .foot {
+    min-height: 10vh; 
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+
+.foot .otraInfo {
+    justify-content: center;
+    flex-basis: 30%;
+    gap: 2rem;
+}
+
+
+.otraInfo .otraInfo__item {
+    flex-basis: 20%; 
+}
+
+.otraInfo__item__link {
+    font-size: 2.5em;
+    padding: 1rem;
+    color: var(--color__second);
+    transform: all .3s ease-in-out; 
+}
+
+.otraInfo__item__link:hover {
+    font-size: 3.2em;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 768px)   {
+    header .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px)   {
+    .contact__form {
+        flex-basis: 80%;
+    }
+
+    .contact__description {
+        flex-basis: 60%;
+    }
+}
+
+@media screen and (max-width: 480px)   {
+    .portfolio__works__item {
+        flex-basis: 60%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
