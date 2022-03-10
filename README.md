@@ -2,4 +2,4 @@
 
 ## Portfolio Soledad Miceli
 
-### Visualizar el [SITIO] (https://mmiceli.github.io/Portfolio/) 
+### Visualizar el [SITIO](https://mmiceli.github.io/Portfolio/).
