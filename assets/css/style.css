@@ -26,12 +26,22 @@ html {
     font-family: var(--font__principal);
     font-size: 62.5%;
     color: var(--color__third);
+    font-weight: none !important; /*Modificacion por bootstrap*/
+    line-height: none !important; /*Modificacion por bootstrap*/
 }
 
 body {
     display: grid;
     grid-template-rows: auto 1fr auto; 
-    min-height: 100vh; 
+    min-height: 100vh;
+
+    /*Moficaciones Bootstrap*/
+    margin: 0;
+    font-family: inherit !important;
+    font-size: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+    color: inherit !important;
 }
 
 ul {
@@ -39,10 +49,27 @@ ul {
 }
 
 a {
-    text-decoration: none;
-    color: var(--color__third); 
+    text-decoration: none !important;
+    color: var(--color__third) !important; 
     display: inline-block; 
 }
+
+h2, h3 {
+    font-weight: bold !important;
+}
+
+h2 {
+    font-size: 3em !important;
+}
+
+h3 {
+    font-size: 2em !important;
+}
+
+ol, ul {
+    padding: 0 !important;
+}
+
 
 /*Helpers*/
 .flex_row {
@@ -72,8 +99,9 @@ a {
 }
 
 .button_dos {
-    color: var(--color__second);
-    font-size: 1.6em;
+    color: var(--color__second) !important;
+    font-size: 1.6em !important;
+    font-weight: 520 !important;
     background-color: var(--color__first);
     padding: 1rem;
     margin: 1rem;
@@ -82,7 +110,7 @@ a {
 }
 
 .button_dos:hover {
-    color: var(--color__first);
+    color: var(--color__first) !important;
     background-color: var(--color__second);
 
 }
@@ -95,8 +123,7 @@ header {
 
 header .navbar {
     justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
+    align-items: center !important;
 }
 
 header .logo {
@@ -110,47 +137,47 @@ header .logo {
 }
 
 .menu .menu__item .menu__item__link {
-    font-size: 1.8em;
-    padding: 1rem;
-    transition: all .3s ease-in-out;    
+    font-size: 1.8em !important;
+    padding: 1rem !important;
+    transition: all .3s ease-in-out !important;    
 }
 .menu .menu__item .menu__item__link:hover {
-    font-weight:600;
-    color: var(--color__second);
+    font-weight:600 !important;
+    color: var(--color__second) !important;
 }
 
 .menu .menu__item .menu__item__link--boton {
-    font-size: 1.8em;
-    padding: 1rem;
-    color:var(--color__first);
-    background-color: var(--color__second);
-    border-radius: 20px;
+    font-size: 1.8em !important;
+    padding: 1rem !important;
+    color:var(--color__first) !important;
+    background-color: var(--color__second) !important;
+    border-radius: 20px !important;
 }
 
 .menu .menu__item .menu__item__link--boton:hover {
-    font-weight:600;
+    font-weight:600 !important;
 }
 
 .navbar .menu__item .submenu {
-    display: none;
-    position: absolute;
+    display: none !important;
+    position: absolute !important;
 }
 
 .navbar .menu .menu__item:hover .submenu { 
-    display: block;
+    display: block !important;
 }
 
 .submenu .submenu__item .submenu__item__link {
-    font-size: 1.4em;
-    padding: 1rem;
-    transform: all .3s ease-in-out; 
-    font-weight: 600;
+    font-size: 1.4em !important;
+    padding: 1rem !important;
+    transform: all .3s ease-in-out !important; 
+    font-weight: 600 !important;
 }
 
 .submenu .submenu__item .submenu__item__link:hover {
-    font-weight:900;
-    font-size: 1.7em;
-    color: var(--color__second);
+    font-weight:900 !important;
+    font-size: 1.7em !important;
+    color: var(--color__second) !important;
 }
 
 /*Main*/
@@ -168,7 +195,6 @@ main {
 
 .principal .titule_pag {
     color: var(--color__third);
-    font-size: 3em;
     padding: 1rem;
     margin: 0 2rem; 
 }
@@ -189,7 +215,7 @@ main {
 
 .inicio .inicio__name{
     justify-content: space-around;
-    padding: 4rem 4rem;
+    padding: 4rem 0;
     font-size: 4em;
     color: var(--color__cuarter);
     text-align: center;
@@ -198,7 +224,7 @@ main {
 .inicio .inicio__rol{
     justify-content: center;
     align-items: center;
-    padding: 4rem 2rem;
+    padding: 2rem 0;
     transform: all .3s ease-in-out;
 
 }
@@ -259,18 +285,20 @@ main {
 
 .about .about__knowledge {
     justify-content: space-around;
-    font-size: 2em;
     color: var(--color__cuarter);
     flex-wrap: wrap;
     width: 80%;
 }
 
 .about .about__knowledge .about__knowledge__list {
+    font-size: 2em;
     padding: 1rem;
     margin-bottom: 2rem;
 }
 
 .about .about__knowledge .about__knowledge__list .list__titule {
+    font-size: 1.2em;
+    font-weight: 600;
     padding: 2rem;
     color: var(--color__third);
 }
@@ -309,13 +337,27 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
 }
 
 .general__subdiv__item {
     margin: 1rem;
     flex-basis: 30%;
-    transform: all .3s ease-in-out;
+}
 
+.general__subdiv__item2 {
+    margin: 1rem;
+    flex-basis: 25%;
+}
+
+.general__subdiv__item3 {
+    margin: 1rem;
+    flex-basis: 60%;
 }
 
 .general__subdiv__item__img {
@@ -394,8 +436,8 @@ footer .foot {
 .otraInfo__item__link {
     font-size: 2.5em;
     padding: 1rem;
-    color: var(--color__second);
-    transform: all .3s ease-in-out; 
+    color: var(--color__second) !important;
+    transform: all .3s ease-in-out !important; 
 }
 
 .otraInfo__item__link:hover {
@@ -407,34 +449,42 @@ footer .foot {
     header .navbar {
         flex-wrap: wrap;
         justify-content: center;
-        width: auto;
-        margin: 1rem 0;
-    }
-}
-
-@media screen and (max-width: 600px)   {
-    .contact__form {
-        flex-basis: 80%;
     }
 
-    .contact__description {
-        flex-basis: 60%;
+    .menu .menu__item .menu__item__link  {
+        font-size: 1.7em !important;
+        padding: 0.5rem !important;
     }
+
+    .menu .menu__item .menu__item__link--boton {
+        font-size: 1.7em !important;
+        padding: 0.5rem !important;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 @media screen and (max-width: 480px)   {
     .portfolio__works__item {
         flex-basis: 60%;
     }
+
 }
 
+@media screen and (max-width: 360px)   {
 
+    .menu .menu__item .menu__item__link  {
+        font-size: 1.6em !important;
+        padding: 0.4rem !important;
+    }
 
+    .menu .menu__item .menu__item__link--boton {
+        font-size: 1.6em !important;
+        padding: 0.4rem !important;
+    }
 
-
-
-
-
-
-
-
+}
