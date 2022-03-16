@@ -56,8 +56,15 @@
                 <form class="contact__form flex_column" action="" method="get">
                     <input class="contact__form__item" type="nombre" value="Name">
                     <input class="contact__form__item" type="e-mail" value="e-mail">
+                    <!--Bootstrap Form Select: modification class-->
+                    <select class="contact__form__item" aria-label="Default select example">
+                        <option selected>Choose the service</option>
+                        <option value="1">Develop</option>
+                        <option value="2">Functional analysis</option>
+                        <option value="3">Business analysis</option>
+                    </select>
                     <textarea class="contact__form__item" name="comentario" id="" cols="30" rows="10">Comment</textarea>
-                    <input class="contact__form__button" type="submit" value="Send">
+                    <input class="contact__form__button" type="submit" value="Submit">
                 </form>
             </div>
         </section>
