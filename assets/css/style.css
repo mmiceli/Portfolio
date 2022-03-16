@@ -21,13 +21,15 @@
     box-sizing: border-box;
 }
 
+/*Se agrega !important para que no se priorice el estilo que da Boostrap*/
+
 /*Globals */
 html {
-    font-family: var(--font__principal);
+    font-family: var(--font__principal) !important;
     font-size: 62.5%;
     color: var(--color__third);
-    font-weight: none !important; /*Modificacion por bootstrap*/
-    line-height: none !important; /*Modificacion por bootstrap*/
+    font-weight: none !important; 
+    line-height: none !important; 
 }
 
 body {
@@ -288,6 +290,8 @@ main {
     color: var(--color__cuarter);
     flex-wrap: wrap;
     width: 80%;
+    background-color: rgb(250, 248, 248);
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / 20%);
 }
 
 .about .about__knowledge .about__knowledge__list {
@@ -378,34 +382,38 @@ main {
     flex-wrap: wrap;
 }
 
-.contact .contact__description {   
-    flex-basis: 30%;
-}
 
-.contact .contact__description .contact__description__p {
-    color: var(--color__cuarter);
-    font-size: 2.5em;
-    text-align: center;
-    margin: 2rem 3rem;
-}
-
-
-.contact__form {
+.contact .contact__form {
     background-color:  rgba(196, 196, 196, 0.7);
     border-radius: 20px;
-    flex-basis: 40%;
+    flex-basis: 35%;
     padding: 2rem;
     margin: 2rem 0;
     transform: all .3s ease-in-out;
 }
 
-.contact__form__item {
+.contact .contact__form .contact__form__item {
     background: rgb(234, 242, 250);
     border-radius: 5px;
     padding: 1rem;
-    margin: 2rem;
+    margin: 1.5rem;
     border: none;
-    
+    font-size: 1.5em;   
+}
+
+.contact .contact__form .contact__form__button {
+    color: var(--color__first);
+    background: var(--color__second);
+    padding: 1rem;
+    margin: 0rem 12rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.4em;
+}
+
+.contact .contact__form .contact__form__button:hover {
+    font-weight:600;
+    font-size: 1.6em;
 }
 
 
@@ -469,8 +477,23 @@ footer .foot {
 }
 
 @media screen and (max-width: 480px)   {
-    .portfolio__works__item {
-        flex-basis: 60%;
+    .general__subdiv__item {
+        flex-basis: 80%;
+    }
+
+    .navbar .menu .menu__item:hover .submenu { 
+        display: none !important;
+    }
+
+}
+
+@media screen and (max-width: 540px)   {
+    .about .about__me {
+        margin: 2rem 0;
+    }
+
+    .about .about__knowledge {
+        width: 100%;
     }
 
 }
@@ -478,13 +501,13 @@ footer .foot {
 @media screen and (max-width: 360px)   {
 
     .menu .menu__item .menu__item__link  {
-        font-size: 1.6em !important;
-        padding: 0.4rem !important;
+        font-size: 1.5em !important;
+        padding: 0.5rem !important;
     }
 
     .menu .menu__item .menu__item__link--boton {
-        font-size: 1.6em !important;
-        padding: 0.4rem !important;
+        font-size: 1.5em !important;
+        padding: 0.5rem !important;
     }
 
 }
