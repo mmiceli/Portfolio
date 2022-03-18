@@ -457,6 +457,10 @@ footer .foot {
     font-size: 3.2em;
 }
 
+.foot__right {
+    font-size: 1.3em;
+}
+
 /*Media Queries*/
 @media screen and (max-width: 768px)   {
     header .navbar {
@@ -481,17 +485,6 @@ footer .foot {
 
 }
 
-@media screen and (max-width: 480px)   {
-    .general__subdiv__item {
-        flex-basis: 80%;
-    }
-
-    .navbar .menu .menu__item:hover .submenu { 
-        display: none !important;
-    }
-
-}
-
 @media screen and (max-width: 540px)   {
     .about .about__me {
         margin: 2rem 0;
@@ -501,6 +494,16 @@ footer .foot {
         width: 100%;
     }
 
+}
+
+@media screen and (max-width: 480px)   {
+    .general__subdiv__item {
+        flex-basis: 80%;
+    }
+
+    .navbar .menu .menu__item:hover .submenu { 
+        display: none !important;
+    }
 }
 
 @media screen and (max-width: 360px)   {
