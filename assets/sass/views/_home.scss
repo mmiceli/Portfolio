@@ -1,0 +1,57 @@
+/*Main*/
+main {
+    background-image: url("../image/fondo.png");
+    background-position: center;  
+    background-repeat: no-repeat;
+
+    .inicio {
+        justify-content: space-between;
+        padding: 0 2rem;
+
+        &__name {
+            justify-content: space-around;
+            padding: 4rem 0;
+            font-size: 4em;
+            color: $color__cuarter;
+            text-align: center;
+        }
+
+        &__rol {
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 0;
+            transform: all .3s ease-in-out;
+
+            &__item1 {
+                padding: 2rem;
+                font-size: 6em;
+                font-weight: 800;
+                text-align: center;
+            }
+
+            &__item2 {
+                padding: 2rem;
+                font-size: 4em;
+                font-weight: 700;
+                text-align: center;
+            }
+
+            &__item3 {
+                padding: 2rem;
+                font-size: 3em;
+                font-weight: 600;
+                text-align: center;
+                margin-bottom: 3rem;
+            }
+
+            &__description {
+                padding: 4rem 2rem;
+                font-size: 2em;
+                font-weight: 400;
+                text-align: center;
+                color: $color__cuarter;
+            }
+        
+        }
+    }
+}

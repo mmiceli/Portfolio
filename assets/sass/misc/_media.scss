@@ -1,0 +1,55 @@
+/*Media Queries*/
+@media screen and (max-width: 540px)   {
+    /*Propiedad navbar para responsive sass*/
+    .navbar {
+        flex-direction: column;
+    }
+    
+    .about .about__me {
+        margin: 2rem 0;
+    }
+
+    .about .about__knowledge {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px)   {
+    /*Propiedad body para responsive sass*/
+    body {
+        justify-content: space-around; 
+    }
+    
+    .general__subdiv__item {
+        flex-basis: 80%;
+    }
+
+    .navbar .menu .menu__item:hover .submenu { 
+        display: none !important;
+    }
+
+    /*Propiedad menu__item__link y menu__item__link--boton para responsive sass*/
+    .menu .menu__item .menu__item__link  {
+        font-size: 1.7em !important;
+        padding: 0.6rem !important;
+    }
+
+    .menu .menu__item .menu__item__link--boton {
+        font-size: 1.7em !important;
+        padding: 0.6rem !important;
+    }
+}
+
+@media screen and (max-width: 360px)   {
+
+    .menu .menu__item .menu__item__link  {
+        font-size: 1.5em !important;
+        padding: 0.5rem !important;
+    }
+
+    .menu .menu__item .menu__item__link--boton {
+        font-size: 1.5em !important;
+        padding: 0.5rem !important;
+    }
+
+}

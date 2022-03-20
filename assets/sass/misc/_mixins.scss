@@ -1,0 +1,40 @@
+/*Helpers*/
+.flex_row {
+    display: flex;
+}
+.flex_column {
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    max-width: 1080px; 
+    margin: 0 auto;
+}
+
+.button {
+    color: $color__first;
+    background: $color__second;
+    padding: 1rem;
+    margin: 0rem 12rem;
+    border: none;
+    border-radius: 2rem;
+    &:hover {
+        font-weight:600;
+        font-size: 1.6em;
+    }
+}
+
+.button_dos {
+    color: $color__second !important;
+    font-size: 1.6em !important;
+    font-weight: 520 !important;
+    background-color: $color__first;
+    padding: 1rem;
+    margin: 1rem;
+    border: solid 0.2rem $color__second;
+    border-radius: 2rem;    
+    &:hover {
+        color: $color__first !important;
+        background-color: $color__second;
+    }
+}

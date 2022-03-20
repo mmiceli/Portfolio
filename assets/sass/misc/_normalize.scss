@@ -1,0 +1,62 @@
+/*Import font*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,600;0,700;1,100;1,200;1,300;1,600;1,800&display=swap');
+
+/*Normalize*/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Se agrega !important para que no se priorice el estilo que da Boostrap*/
+
+/*Globals */
+html {
+    font-family: $font__principal !important;
+    font-size: 62.5%;
+    color: $color__third;
+    font-weight: none !important; 
+    line-height: none !important; 
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto; 
+    min-height: 100vh;
+
+    /*Moficaciones Bootstrap*/
+    margin: 0;
+    font-family: inherit !important;
+    font-size: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+    color: inherit !important;
+}
+
+ul {
+    list-style-type: none; 
+}
+
+a {
+    text-decoration: none !important;
+    color: var(--color__third) !important; 
+    display: inline-block; 
+}
+
+h2, h3 {
+    font-weight: bold !important;
+}
+
+h2 {
+    font-size: 3em !important;
+}
+
+h3 {
+    font-size: 2em !important;
+}
+
+ol, ul {
+    padding: 0 !important;
+}
