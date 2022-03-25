@@ -1,0 +1,39 @@
+/*Main Contact*/
+.contact {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__form {
+        background-color:  rgba(196, 196, 196, 0.7);
+        border-radius: 20px;
+        flex-basis: 35%;
+        padding: 2rem;
+        margin: 2rem 0;
+        transform: all .3s ease-in-out;
+
+        &__item {
+            background: rgb(234, 242, 250);
+            border-radius: 5px;
+            padding: 1rem;
+            margin: 1.5rem;
+            border: none;
+            font-size: 1.5em;   
+        }
+
+        &__button {
+            color: $color__first;
+            background: $color__second;
+            padding: 1rem;
+            margin: 0rem 12rem;
+            border: none;
+            border-radius: 2rem;
+            font-size: 1.4em;
+
+            &:hover {
+                font-weight:600;
+                font-size: 1.6em;
+            }
+        }
+    }
+}

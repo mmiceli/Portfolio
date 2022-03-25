@@ -8,10 +8,14 @@
 
 /*Partial*/
 @import './partials/header';
+@import './partials/main';
 @import './partials/footer';
 
 /*views*/
 @import './views/home';
+@import './views/about';
+@import './views/portfoliohobbies';
+@import './views/contact';
 
 /*Medias*/
 @import './misc/media';
