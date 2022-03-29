@@ -4,16 +4,16 @@ header {
     border-bottom: solid 0.3rem #f0e6e6;
 
     .navbar {
-        justify-content: space-between !important;
-        align-items: center !important;
-
+        @include flex (row, space-between, center);
+        flex-wrap: wrap;
+        
         .logo {
             flex-basis: 30% !important; 
         }
 
         .menu {
+            @include flex (row, space-between, center);
             flex-basis: 50% !important; 
-            justify-content: space-between !important;
 
             &__item {
 
@@ -28,13 +28,13 @@ header {
                     }
 
                     &--boton {
-                        font-size: 1.8em !important;
-                        padding: 1rem !important;
+                        @extend .menu__item__link;
                         color:$color__first !important;
                         background-color: $color__second !important;
                         border-radius: 20px !important;
 
                         &:hover {
+                            color:$color__first !important;
                             font-weight:600 !important;
                         }
                     }
@@ -47,14 +47,14 @@ header {
                     &__item {
                     
                         &__link {
-                            font-size: 1.4em !important;
                             padding: 1rem !important;
                             transform: all .3s ease-in-out !important; 
+                            font-size: 1.4em !important;
                             font-weight: 600 !important;
                         
                             &:hover {
-                                font-weight:900 !important;
                                 font-size: 1.7em !important;
+                                font-weight: 900 !important;
                                 color: $color__second !important;
                             }
 

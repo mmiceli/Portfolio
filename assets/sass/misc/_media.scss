@@ -1,7 +1,7 @@
 /*Media Queries*/
 @media screen and (max-width: 540px)   {
     /*Propiedad navbar para responsive sass- All pages*/
-    .navbar {
+    header .navbar {
         flex-direction: column;
     }
     
@@ -13,11 +13,6 @@
     .about .about__knowledge {
         width: 100%;
     }
-
-    /*Propiedad flex utilizada para responsive sass- Page hobbies*/
-    .flex {
-        flex-direction: column !important;
-    }
 }
 
 @media screen and (max-width: 480px)   {
@@ -26,10 +21,19 @@
         justify-content: space-around; 
     }
     
-    /*Pages about and hobbies*/
-    .general__subdiv__item {
+    /*Pages portfolio and hobbies*/
+    .general__subdiv1__item {
         flex-basis: 80%;
     }
+
+    .general__subdiv1__item2 {
+        flex-basis: 80%;
+    }
+
+    .general__subdiv1__item3 {
+        flex-basis: 80%;
+    }
+
 
     /*All pages*/
     .navbar .menu .menu__item:hover .submenu { 
@@ -38,12 +42,12 @@
 
     /*Propiedad menu__item__link y menu__item__link--boton para responsive sass- All pages*/
     .menu .menu__item .menu__item__link  {
-        font-size: 1.7em !important;
         padding: 0.6rem !important;
+        font-size: 1.7em !important;
     }
     .menu .menu__item .menu__item__link--boton {
-        font-size: 1.7em !important;
         padding: 0.6rem !important;
+        font-size: 1.7em !important;
     }
 }
 
@@ -51,11 +55,11 @@
 
     /*All pages*/
     .menu .menu__item .menu__item__link  {
-        font-size: 1.5em !important;
         padding: 0.5rem !important;
+        font-size: 1.5em !important;
     }
     .menu .menu__item .menu__item__link--boton {
-        font-size: 1.5em !important;
         padding: 0.5rem !important;
+        font-size: 1.5em !important;
     }
 }

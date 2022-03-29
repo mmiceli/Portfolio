@@ -1,4 +1,12 @@
-/*Helpers*/
+/*Mixinns*/
+
+@mixin flex ($flex_direction, $justify_content, $align_items) {
+    display: flex;
+    flex-direction: $flex_direction;
+    justify-content: $justify_content;
+    align-items: $align_items;
+}    
+
 .flex_row {
     display: flex;
 }
@@ -6,35 +14,37 @@
     display: flex;
     flex-direction: column;
 }
+
+/*Helpers*/
 .container {
     max-width: 1080px; 
     margin: 0 auto;
 }
 
 .button {
-    color: $color__first;
     background: $color__second;
-    padding: 1rem;
-    margin: 0rem 12rem;
     border: none;
     border-radius: 2rem;
+    padding: 1rem;
+    margin: 0rem 12rem;
+    color: $color__first;
     &:hover {
-        font-weight:600;
         font-size: 1.6em;
+        font-weight:map-get($font-weight, m)
     }
 }
 
 .button_dos {
-    color: $color__second !important;
-    font-size: 1.6em !important;
-    font-weight: 520 !important;
     background-color: $color__first;
+    border: solid 0.2rem $color__second;
+    border-radius: 2rem; 
     padding: 1rem;
     margin: 1rem;
-    border: solid 0.2rem $color__second;
-    border-radius: 2rem;    
+    font-size: 1.6em !important;
+    font-weight: 520 !important;
+    color: $color__second !important;   
     &:hover {
-        color: $color__first !important;
         background-color: $color__second;
+        color: $color__first !important;
     }
 }

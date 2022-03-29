@@ -1,56 +1,47 @@
 /*Main About*/
 .about {
-    justify-content: center;
-    align-items: center;
+    @include flex (column, center, center);
     padding: 2rem;
 
     &__me {
         background-color: $color__third;
-        justify-content: center;
-        align-items: center; 
         margin: 2rem;
         transform: all .3s ease-in-out;
 
         &__parrafo {
-            font-size: 2em;
-            color: $color__first;
             text-align: center;
             padding: 2rem;
             margin: 1rem;
+            font-size: 2em;
+            color: $color__first;
         }
     }
 
     &__knowledge {
+        @include flex (row, space-around, center);
+        flex-wrap: wrap;
         background-color: rgb(250, 248, 248);
         box-shadow: 0 0 30px 0 #00000033;
-        justify-content: space-around;
-        flex-wrap: wrap;
         color: $color__cuarter;
         width: 80%;
 
         &__list {
-            font-size: 2em;
+            @include flex (column, center, center);
             padding: 1rem;
             margin-bottom: 2rem;
+            font-size: 2em;
 
             &__titule {
-                font-size: 1.2em;
-                font-weight: 600;
-                color: $color__third;
                 padding: 2rem;  
+                font-weight: map-get($font-weight, m);
+                color: $color__third;
+
             }
             &__item {
-                font-weight: 500;
                 padding: 0.5rem;
+                font-size: 1em;
+                font-weight: map-get($font-weight, s);
             }
-        }
-    }
-
-    &__button {
-        justify-content: center;
-        
-        &__item {
-            flex-basis: 15%;
         }
     }
 }
