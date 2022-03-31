@@ -7,14 +7,6 @@
     align-items: $align_items;
 }    
 
-.flex_row {
-    display: flex;
-}
-.flex_column {
-    display: flex;
-    flex-direction: column;
-}
-
 /*Helpers*/
 .container {
     max-width: 1080px; 

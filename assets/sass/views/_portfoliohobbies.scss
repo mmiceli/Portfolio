@@ -30,7 +30,7 @@
         padding-bottom: 2rem;
         color: $color__cuarter;
 
-        &__item {
+        &__item1 {
             flex-basis: 30%;
             margin: 1rem;
 
@@ -49,5 +49,9 @@
             flex-basis: 60%;
             margin: 1rem;
         }
+    }
+
+    p {
+        font-size: 1.2em;
     }
 }
