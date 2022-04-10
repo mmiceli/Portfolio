@@ -13,6 +13,12 @@
     .about .about__knowledge {
         width: 100%;
     }
+
+    /*Page hobbies*/
+    .general__subdiv1 {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (max-width: 480px)   {
