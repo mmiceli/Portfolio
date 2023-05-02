@@ -4,7 +4,7 @@
 
     &__name {
         text-align: center;
-        padding: 4rem 0;
+        padding: 3rem 0;
         font-size: 4em;
         color: $color__cuarter;
     }
@@ -16,26 +16,26 @@
 
         &__item1 {
             padding: 2rem;
-            font-size: 6em;
-            font-weight: map-get($font-weight, xl);
+            font-size: 4.5em;
+            font-weight: map-get($font-weight, l);
         }
 
         &__item2 {
             padding: 2rem;
             font-size: 4em;
-            font-weight: map-get($font-weight, l);
+            font-weight: map-get($font-weight, m);
         }
 
         &__item3 {
             padding: 2rem;
             margin-bottom: 3rem;
             font-size: 3em;
-            font-weight: map-get($font-weight, m);
+            font-weight: map-get($font-weight, s);
         }
 
         &__description {
             text-align: center;
-            padding: 4rem 2rem;
+            padding: 2rem 2rem;
             font-size: 2em;
             font-weight: map-get($font-weight, xs);
             color: $color__cuarter;

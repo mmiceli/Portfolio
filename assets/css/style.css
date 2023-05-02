@@ -190,7 +190,7 @@ footer {
   align-items: center; }
   .inicio__name {
     text-align: center;
-    padding: 4rem 0;
+    padding: 3rem 0;
     font-size: 4em;
     color: #000000; }
   .inicio__rol {
@@ -198,20 +198,20 @@ footer {
     transform: all .3s ease-in-out; }
     .inicio__rol__item1 {
       padding: 2rem;
-      font-size: 6em;
-      font-weight: 800; }
+      font-size: 4.5em;
+      font-weight: 700; }
     .inicio__rol__item2 {
       padding: 2rem;
       font-size: 4em;
-      font-weight: 700; }
+      font-weight: 600; }
     .inicio__rol__item3 {
       padding: 2rem;
       margin-bottom: 3rem;
       font-size: 3em;
-      font-weight: 600; }
+      font-weight: 500; }
     .inicio__rol__description {
       text-align: center;
-      padding: 4rem 2rem;
+      padding: 2rem 2rem;
       font-size: 2em;
       font-weight: 400;
       color: #000000; }
